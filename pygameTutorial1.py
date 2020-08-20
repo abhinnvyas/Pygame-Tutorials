@@ -6,10 +6,10 @@ win = pygame.display.set_mode((500,500))
 pygame.display.set_caption("The Coding Protocol")
 
 x = 150
-y = 150
-width = 30
-height = 30
-velocity = 10
+y = 250
+width = 20
+height = 20
+velocity = 5
 
 run = True
 while run:
@@ -34,7 +34,7 @@ while run:
         y += velocity
 
     win.fill((0,0,0))
-    pygame.draw.rect(win, (0,250,0), (x,y,width,height))
+    pygame.draw.rect(win, (0, 250, 0), (x,y,width, height))
     pygame.display.update()
 
 pygame.quit()
